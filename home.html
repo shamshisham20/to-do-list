@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container"> 
+    <div class="start">
+      <img src="images/lDvRNpvChR3gOMBbb4sL2lIffOZ3JDK_9MajAAEnCB64tDr4SNYr-ukvICFOTns6_4h7HS8XJ1vo_AytlVJUHBlm.jpg" alt="Stitch Logo" style="width: 50px; vertical-align: middle; margin-right: 10px;">
+
+    <h1>You can do it</h1>
+      </div>
+    <form id="taskForm">
+      <input type="text" id="taskTitle" placeholder="Task Title" required />
+      <input type="date" id="taskDate" required />
+      <input type="text" id="taskTag" placeholder="Tag (optional)" />
+      <button type="submit" id="btnadd">Add Task</button>
+    </form>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search tasks..." />
+      <select id="sortSelect">
+        <option value="date">Sort by Date</option>
+        <option value="completed">Sort by Completed</option>
+      </select>
+    </div>
+    <div class="tablelist">
+    <table>
+      <thead>
+        <tr>
+        <th>done</th>
+        <th>Task title</th>
+        <th>Date</th>
+        <th>Tag</th>
+        <th>edits</th>
+        </tr>
+      </thead>
+      <tbody id="taskList">
+    <!-- هنا هيتضاف الـ <tr> من الجافاسكريبت -->
+  </tbody>
+</table>
+  </div>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>

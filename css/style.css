@@ -1,0 +1,158 @@
+.btncomp{
+    padding: 5px 8px;
+    /* border:none; */
+    border-radius: 50%;
+    /* background-color:transparent; */
+}
+/* 🌈 ألوان مستوحاة من Stitch */
+:root {
+  --stitch-blue: #5da9e9;
+  --stitch-dark: #2b4570;
+  --stitch-purple: #b4a5d3;
+  --stitch-pink: #f6a6b2;
+  --stitch-white: #fefefe;
+  --stitch-light: #e1f0fb;
+}
+
+/* ✅ ضبط عام */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--stitch-light);
+  color: var(--stitch-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: var(--stitch-white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--stitch-blue);
+  font-size: 2.5rem;
+}
+
+/* ✅ نموذج المهمة */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+form input, form button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form input {
+  flex: 1 1 200px;
+  background-color: var(--stitch-light);
+  border: 1px solid var(--stitch-blue);
+}
+
+form button {
+  background-color: var(--stitch-blue);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--stitch-dark);
+}
+
+/* ✅ البحث والترتيب */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.controls input, .controls select {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--stitch-blue);
+  font-size: 1rem;
+  background-color: var(--stitch-light);
+  flex: 1 1 200px;
+}
+
+/* ✅ الجدول */
+.tablelist table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tablelist th, .tablelist td {
+  padding: 0.9rem;
+  border-bottom: 1px solid var(--stitch-blue);
+}
+
+.tablelist thead {
+  background-color: var(--stitch-purple);
+  color: white;
+}
+
+.btnedit, .btndelet, .btncomp {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 0 2px;
+}
+
+.btnedit {
+  background-color:var(--stitch-blue) ;
+  color: white;
+}
+
+.btndelet {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btncomp {
+  background-color: var(--stitch-blue);
+  color: white;
+}
+
+.btncomp i {
+  color: white;
+}
+
+.btnedit:hover {
+  background-color:var(--stitch-dark) ;
+}
+
+.btndelet:hover {
+  background-color: #c0392b;
+}
+
+.btncomp:hover {
+  background-color: var(--stitch-dark);
+}
+.start
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start img{
+    width: 100px;
+    height: 90px;
+}
